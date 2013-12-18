@@ -5,9 +5,9 @@
     "default_attributes": {
     },
     "run_list": [
-        "recipe[yum::epel]",
         "recipe[yum::remi]",
         "recipe[yum::repoforge]",
+        "recipe[yum::epel]",
         "recipe[ntp]",
         "recipe[selinux::disabled]",
         "recipe[php-default]"
